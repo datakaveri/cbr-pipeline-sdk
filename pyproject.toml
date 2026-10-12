@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cbr-pipeline-sdk"
+version = "2.2.0"
+description = "Helpers for custom nodes of the CBR no-code pipeline editor: read and write files, parse the node context, fetch user secrets (stdlib-only)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "datakaveri", email = "analytics@datakaveri.org" }]
+keywords = ["pipeline", "no-code", "custom-node", "sdk"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/datakaveri/cbr-pipeline-sdk"
+Repository = "https://github.com/datakaveri/cbr-pipeline-sdk"
+
+[tool.setuptools.packages.find]
+include = ["pipeline_sdk*"]
